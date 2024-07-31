@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Box with Background Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url('https://github.com/J0CKSTRAP/metal/blob/main/932271.jpg?raw=true') no-repeat center center;
+            background-size: cover; /* Ensures the background image covers the entire body */
+            color: #ffffff; /* Text color for contrast */
+        }
+        .box {
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            box-sizing: border-box;
+            position: relative; /* To position the logo */
+        }
+        .logo {
+            width: 200px; /* Set width to 300px */
+            height: 100px; /* Set height to 300px */
+            object-fit: cover; /* Ensures the image covers the dimensions without distortion */
+            margin-bottom: 20px;
+        }
+        .download-button {
+            background: transparent;
+            color: #ffffff;
+            border: none; /* No outline */
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background 0.3s, color 0.3s;
+        }
+        .download-button:hover {
+            background: transparent;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://github.com/J0CKSTRAP/metal/blob/main/metallogo.png?raw=true" alt="Logo" class="logo">
+        <p>Metal is the best internal executor on the market. It is level 3 with 74 - 76% UNC for Executing almost any script out there. Also Metal V3 is COMPLETELY FREE only one small linkvertise that is only there for a little donation to me.</p>
+        <h3>Metal: The future of exploiting</h3>
+        <a href="https://discord.gg/83YWxpYmmG" class="download-button">Download Metal</a>
+    </div>
+</body>
+</html>
