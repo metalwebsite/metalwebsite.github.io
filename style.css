@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.image-container {
+    perspective: 1000px;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.image-container:hover img {
+    transform: rotateY(45deg);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
